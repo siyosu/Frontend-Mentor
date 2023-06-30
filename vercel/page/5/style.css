@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  /* Primary colors */
+  --color-light-red: hsl(0, 100%, 67%);
+  --color-orange-yellow: hsl(39, 100%, 56%);
+  --color-green-teal: hsl(166, 100%, 37%);
+  --color-cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Primary transparent colors */
+  --transparent-light-red: hsla(0, 100%, 67%, 0.05);
+  --transparent-orange-yellow: hsla(39, 100%, 56%, 0.05);
+  --transparent-green-teal: hsla(166, 100%, 37%, 0.05);
+  --transparent-cobalt-blue: hsla(234, 85%, 45%, 0.05);
+
+  /* Gradients colors for background and circle */
+  --color-light-slate-blue: hsl(252, 100%, 67%);
+  --color-light-royal-blue: hsl(241, 81%, 54%);
+  --color-violet-blue: hsla(256, 72%, 46%, 1);
+  --color-persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-pale-blue: hsl(221, 100%, 96%);
+  --color-light-lavender: hsl(241, 100%, 89%);
+  --color-dark-gray-blue: hsl(224, 30%, 27%);
+  --color-gray: hsl(206, 15%, 80%);
+}
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  background-color: var(--color-white);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  color: var(--color-dark-gray-blue);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.muted {
+  color: var(--color-gray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: var(--color-white);
+  box-shadow: 0 6px 10px var(--color-light-lavender);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Result Styling */
+.result {
+  background: linear-gradient(
+    to bottom,
+    var(--color-light-slate-blue) -20%,
+    var(--color-light-royal-blue) 70%
+  );
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.score {
+  background: linear-gradient(
+    to top,
+    var(--color-persian-blue) -10%,
+    var(--color-violet-blue) 100%
+  );
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.score span {
+  color: var(--color-light-lavender);
+}
+
+.status {
+  width: 75%;
+  text-align: center;
+}
+
+.status span {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.status p {
+  font-size: 18px;
+}
+
+
+/* Summary Styling */
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stats-item {
+  height: 2.8rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-weight: 700;
+}
+
+.stats-item .left img {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.stats-item.red {
+  background-color: var(--transparent-light-red);
+  color: var(--color-light-red);
+}
+.stats-item.yellow {
+  background-color: var(--transparent-orange-yellow);
+  color: var(--color-orange-yellow);
+}
+.stats-item.green {
+  background-color: var(--transparent-green-teal);
+  color: var(--color-green-teal);
+}
+.stats-item.blue {
+  background-color: var(--transparent-cobalt-blue);
+  color: var(--color-cobalt-blue);
+}
+.stats-item .right {
+  color: var(--color-dark-gray-blue);
+}
+
+.btn {
+  height: 2.8rem;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--color-dark-gray-blue);
+  color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--color-light-slate-blue) -20%,
+    var(--color-light-royal-blue) 70%
+  );
+}
+.btn:active {
+  transform: scale(0.97);
+}
+
+@media screen and (max-width: 740px){
+    .container{
+        height: 100%;
+        grid-template-columns: 1fr;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .result{
+        border-radius: 0 0 30px 30px;
+    }
+    .status{
+        width: 90%;
+    }
+    .status span{
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    .status p{
+        font-size: 0.9rem;
+    }
+    .summary{
+        padding: 1rem;
+    }
+    footer{
+        display: none;
+    }
+}

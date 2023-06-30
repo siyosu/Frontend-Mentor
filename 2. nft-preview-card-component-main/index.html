@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    :root{
+      --sb-color-:hsl(215, 51%, 70%);
+      --cyan-:hsl(178, 100%, 50%);
+      --vdb-main-bg-:hsl(217, 54%, 11%);
+      --vdb-card-bg-:hsl(216, 50%, 16%);
+      --vdb-line-:hsl(215, 32%, 27%);
+      --white-:hsl(0, 0%, 100%);
+      font-size: 18px;
+      font-family: Outfit;
+    }
+    body{
+      background-color: var(--vdb-main-bg-);
+    }
+    main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card{
+      width: 16em;
+      padding: 1.2em;
+      border-radius: 0.5em;
+      background-color: var(--vdb-card-bg-);
+      color: var(--white-);
+      cursor: default;
+    }
+    .content .nft-image{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content .nft-image img{
+      width: 100%;
+      border-radius: 0.5em;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    .content .nft-image .hover-bg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background-color: var(--cyan-);
+      border-radius: 0.5em;
+      opacity: 0.5;
+      pointer-events: none;
+      display: none;
+    }
+    .content .nft-image img:last-of-type{
+      display: none;
+      position: absolute;
+      width: 3em;
+      height: 3em;
+      pointer-events: none;
+    }  
+    .content .nft-image img:hover ~ .hover-bg,
+    .content .nft-image img:hover ~ img:last-of-type{
+      display: block;
+    }
+    .content h1{
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .content h1:hover{
+      color: var(--cyan-);
+    }
+    .content p{
+      color: var(--sb-color-);
+      font-weight: 300;
+      margin: 0;
+    }
+    .content .price{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .content .price h2{
+      color: var(--cyan-);
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .content .price * img{
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    hr{
+      border: 1px solid var(--vdb-line-);
+    }
+    .avatar{
+      font-size: 1rem;
+      padding: 0.5rem 0;
+    }
+    .avatar img{
+      width: 1.7em;
+      margin-right: 1em;
+      vertical-align: middle;
+      border: 2px solid var(--white-);
+      border-radius: 50%;
+    }
+    .avatar a{
+      color: var(--white-);
+      text-decoration: none;
+    }
+    .avatar a:hover{
+      color: var(--cyan-);
+    }
+    footer .attribution { font-size: 11px; text-align: center; color: var(--sb-color-); }
+    footer .attribution a { color: var(--white-); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="content">
+        <div class="nft-image">
+          <img src="./images/image-equilibrium.jpg" alt="NFT Image">
+          <div class="hover-bg"></div>
+          <img src="images/icon-view.svg" alt="View Icon">
+        </div>
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="price">
+          <h2><img src="./images/icon-ethereum.svg" alt="Etherium Icon">0.041 ETH</h2>
+          <p><img src="./images/icon-clock.svg" alt="Clock Icon">3 days left</p>
+        </div>
+        <hr>
+        <p class="avatar"><img src="./images/image-avatar.png" alt="Avatar">Creation of <a href="#">Jules Wyvern</a></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/siyosu">Yosua Tarida Panjaitan</a>.
+    </div>
+  </footer>
+</body>
+</html>

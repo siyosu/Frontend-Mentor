@@ -10,6 +10,7 @@ I complete challenges number 1-4 4 months ago, I haven't completed any challenge
 - [Order summary component](./3.%20order-summary-component-main/)
 - [Product preview card component](./4.%20product-preview-card-component-main/)
 - [Results summary component](./5.%20results-summary-component-main/)
+- [3-Column preview card component](./6.%203-column-preview-card-component-main/)
 
 Check out my Frontend Mentor page https://www.frontendmentor.io/profile/siyosu
 

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* Primary colors */
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral colors */
+  --color-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --color-very-light-gray: hsl(0, 0%, 95%);
+}
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  padding: 0 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 2rem 0;
+  transition: all 0.3s;
+}
+
+.card {
+  color: #fff;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 5rem);
+  max-width: 300px;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.card.first {
+  background-color: var(--color-bright-orange);
+}
+
+.card.second {
+  background-color: var(--color-dark-cyan);
+}
+
+.card.third {
+  background-color: var(--color-very-dark-cyan);
+}
+
+.title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.desc {
+  color: var(--color-paragraphs);
+  margin-bottom: 7rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 0.9rem 2.5rem;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  transition: all 0.15s;
+}
+
+.btn.first {
+  color: var(--color-bright-orange);
+}
+
+.btn.second {
+  color: var(--color-dark-cyan);
+}
+
+.btn.third {
+  color: var(--color-very-dark-cyan);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    padding: 1.5rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    max-width: 500px;
+    grid-column: span 1;
+  }
+  .desc {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 651px) and (max-width: 850px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card:last-child {
+    max-width: 600px;
+    grid-column: span 2;
+  }
+}

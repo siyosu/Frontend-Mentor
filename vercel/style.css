@@ -12,11 +12,11 @@ body {
 body {
   background-color: #1c1c28;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 main {

@@ -1,8 +1,6 @@
 
 # All of my solutions for Frontend Mentor Challenges
 
-I complete challenges number 1-4 4 months ago, I haven't completed any challenges since then. But from now on I will try to complete as many challenges as I can.
-
 ## List of completed challenges
 
 - [QR code component](./1.%20qr-code-component-main/)
@@ -12,6 +10,7 @@ I complete challenges number 1-4 4 months ago, I haven't completed any challenge
 - [Results summary component](./5.%20results-summary-component-main/)
 - [3-Column preview card component](./6.%203-column-preview-card-component-main/)
 - [Interactive rating component](./7.%20interactive-rating-component-main/)
+- [Profile card component](./8.%20profile-card-component-main/)
 
 Check out my Frontend Mentor page https://www.frontendmentor.io/profile/siyosu
 

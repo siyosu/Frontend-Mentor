@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
+:root{
+  --color-newbie: #6ABECD;
+  --color-junior:#AAD742;
+}
+
+
 *,
 html,
 body {
@@ -25,20 +31,19 @@ main {
   margin: 0 auto;
   background-color: #393953;
   border-radius: 15px;
-  padding: 1rem 2rem;
-  text-align: center;
+  padding: 2rem;
 }
 
 .title {
   font-weight: 600;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -49,20 +54,18 @@ main {
   width: 100%;
   border-radius: 5px;
   text-decoration: none;
-  background-color: rgba(105, 102, 255, 0.2);
   font-size: 1.1rem;
   font-weight: 500;
-  color: #6966ff;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .list li a:hover {
-  background-color: #6966ff;
-  color: #fff;
+  border-radius: 50px;
+  transform: scale(1.05);
 }
 
 .list li a:active {
-  transform: scale(0.97);
+  transform: scale(0.98);
 }
 
 .link a {
@@ -71,11 +74,35 @@ main {
   font-weight: 600;
 }
 
+.level{
+  margin-bottom: 1rem;
+}
+
+.level span{
+  display: inline-block;
+  padding: 0.2rem;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.newbie{
+  background-color: var(--color-newbie);
+  color: #fff;
+}
+
+.junior{
+  background-color: var(--color-junior);
+  color: #fff
+}
+
 @media screen and (max-width: 500px) {
   body {
     padding: 0 1rem;
   }
   main {
     padding: 1rem;
+  }
+  .title{
+    font-size: 1.4rem;
   }
 }

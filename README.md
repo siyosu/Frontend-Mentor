@@ -12,6 +12,7 @@
 - [3-Column preview card component](./6.%203-column-preview-card-component-main/)
 - [Interactive rating component](./7.%20interactive-rating-component-main/)
 - [Profile card component](./8.%20profile-card-component-main/)
+- [Intro component with sign up form](./10.%20intro-component-with-signup-form-master/)
 
 ### Junior challenge
 - [Newsletter sign-up form with success message](./9.%20newsletter-sign-up-with-success-message-main/)

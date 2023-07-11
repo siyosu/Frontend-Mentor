@@ -13,6 +13,7 @@
 - [Interactive rating component](./7.%20interactive-rating-component-main/)
 - [Profile card component](./8.%20profile-card-component-main/)
 - [Intro component with sign up form](./10.%20intro-component-with-signup-form-master/)
+- [Stats preview card component](./11.%20stats-preview-card-component-main/)
 
 ### Junior challenge
 - [Newsletter sign-up form with success message](./9.%20newsletter-sign-up-with-success-message-main/)

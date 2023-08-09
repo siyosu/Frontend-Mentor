@@ -19,6 +19,7 @@
 
 ### Junior challenge
 - [Newsletter sign-up form with success message](./9.%20newsletter-sign-up-with-success-message-main/)
+- [Sunnyside agency landing page](./14.%20sunnyside-agency-landing-page-main/)
 
 Check out my Frontend Mentor page https://www.frontendmentor.io/profile/siyosu
 

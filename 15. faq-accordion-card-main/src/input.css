@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .summary {
+    @apply relative block cursor-pointer text-[13px] text-dark-400 after:absolute after:right-0 after:transition after:content-[url('../images/icon-arrow-down.svg')] hover:text-soft-red md:text-[14px];
+  }
+}

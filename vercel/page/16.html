@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/16/images/favicon-32x32.png" />
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="./assets/16/src/style.css" />
+</head>
+
+<body class="bg-dark-blue font-manrope">
+  <main class="flex min-h-screen items-center justify-center">
+    <div class="container p-4 md:max-w-xl">
+      <div class="flex flex-col items-center rounded-xl bg-dark-grayish-blue px-4 pt-12 text-center md:px-12">
+        <h1 class="group mb-6 text-sm font-extrabold uppercase tracking-[0.2em] text-neon-green">
+          Advice #<span id="advice-id" class="inline group-[.loading]:hidden">117</span>
+          <div class="hidden group-[.loading]:inline-block">
+            <span class="inline-block animate-bounce">.</span>
+            <span class="inline-block animate-bounce [animation-delay:200ms]">.</span>
+            <span class="inline-block animate-bounce">.</span>
+          </div>
+        </h1>
+        <blockquote class="group mb-6 text-2xl font-extrabold text-light-cyan md:text-[28px]">
+          <div class="hidden group-[.loading]:block">
+            <span class="inline-block animate-bounce">.</span>
+            <span class="inline-block animate-bounce [animation-delay:200ms]">.</span>
+            <span class="inline-block animate-bounce">.</span>
+          </div>
+          <p id="advice" class="before:content-['\201C'] after:content-['\201D'] group-[.loading]:hidden">
+            It is easy to sit up and take notice, what's difficult is getting
+            up and taking action.
+          </p>
+        </blockquote>
+        <div>
+          <picture>
+            <source srcset="./assets/16/images/pattern-divider-desktop.svg" media="(min-width:768px)" />
+            <img src="./assets/16/images/pattern-divider-mobile.svg" alt="" />
+          </picture>
+        </div>
+        <button id="random-adivce" class="hover:btn-shadow relative top-8 rounded-full border-light-cyan bg-neon-green p-5 transition duration-200 active:scale-95 disabled:cursor-wait disabled:bg-neon-green/50 disabled:hover:shadow-none">
+          <img class="" src="./assets/16/images/icon-dice.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </main>
+  <footer class="p-2 text-center text-sm text-light-cyan">
+    Challenge by
+    <a class="font-extrabold text-neon-green" href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank">Frontend Mentor</a>. Coded by
+    <a class="font-extrabold text-neon-green" href="https://github.com/siyosu">SIYOSU</a>.
+  </footer>
+  <script src="./assets/16/src/main.js"></script>
+</body>
+
+</html>

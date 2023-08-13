@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn-shadow{
+        box-shadow: 0 0 20px 10px hsla(150, 100%, 66%, 0.5); 
+    }
+}

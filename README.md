@@ -22,6 +22,7 @@
 - [Newsletter sign-up form with success message](./9.%20newsletter-sign-up-with-success-message-main/)
 - [Sunnyside agency landing page](./14.%20sunnyside-agency-landing-page-main/)
 - [Advice generator app](./16.%20advice-generator-app-main/)
+- [Testimonials grid section](./17.%20testimonials-grid-section-main/)
 
 Check out my Frontend Mentor page https://www.frontendmentor.io/profile/siyosu
 

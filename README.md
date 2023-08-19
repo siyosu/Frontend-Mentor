@@ -23,6 +23,7 @@
 - [Sunnyside agency landing page](./14.%20sunnyside-agency-landing-page-main/)
 - [Advice generator app](./16.%20advice-generator-app-main/)
 - [Testimonials grid section](./17.%20testimonials-grid-section-main/)
+- [Clipboard landing page](./18.%20clipboard-landing-page-master/)
 
 Check out my Frontend Mentor page https://www.frontendmentor.io/profile/siyosu
 

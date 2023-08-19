@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/19/assets/images/favicon-32x32.png" />
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="./assets/19/src/style.css" />
+</head>
+
+<body class="font-jakarta md:bg-gray-100">
+  <main>
+    <div class="container mx-auto flex items-center justify-center px-4 md:max-w-[1440px] md:pt-16">
+      <div class="mb-8 max-w-[710px] bg-white md:rounded-lg md:px-8 md:shadow-xl md:shadow-gray-300">
+        <!-- Notification Header -->
+        <div class="flex justify-between py-5 md:pt-8">
+          <h1 class="text-xl font-extrabold">
+            Notifications
+            <span id="notification_count" class="ml-2 rounded-md bg-blue px-3 py-[2px] text-base text-white">3</span>
+          </h1>
+          <button class="text-sm md:text-base text-gray-500 hover:text-blue" id="read_all">
+            Mark all as read
+          </button>
+        </div>
+        
+        <!-- Notification Body -->
+        <div class="flex flex-col gap-3 text-sm md:text-base">
+          <div class="flex gap-3 rounded-md p-4 [&:has(.unread)]:bg-gray-100">
+            <div class="h-10 w-10 flex-shrink-0">
+              <img class="h-full w-full object-contain" src="./assets/19/assets/images/avatar-mark-webber.webp" alt="" />
+            </div>
+            <div>
+              <p class="leading-5 text-gray-500">
+                <a href="#" class="mr-1 font-extrabold text-gray-600 transition hover:text-blue">Mark Webber</a>
+                reacted to your recent post
+                <a href="#" class="ml-1 font-extrabold transition hover:text-blue">My first tournament today!</a><span
+                  class="unread ml-2 inline-block h-2 w-2 rounded-full bg-red"></span>
+              </p>
+              <span class="text-gray-400">1m ago</span>
+            </div>
+          </div>
+
+          <div class="flex gap-3 rounded-md p-4 [&:has(.unread)]:bg-gray-100">
+            <div class="h-10 w-10 flex-shrink-0">
+              <img class="h-full w-full object-contain" src="./assets/19/assets/images/avatar-angela-gray.webp" alt="" />
+            </div>
+            <div>
+              <p class="leading-5 text-gray-500">
+                <a href="#" class="mr-1 font-extrabold text-gray-600 transition hover:text-blue">Angela Gray</a>
+                followed you<span class="unread ml-2 inline-block h-2 w-2 rounded-full bg-red"></span>
+              </p>
+              <span class="text-gray-400">5m ago</span>
+            </div>
+          </div>
+
+          <div class="flex gap-3 rounded-md p-4 [&:has(.unread)]:bg-gray-100">
+            <div class="h-10 w-10 flex-shrink-0">
+              <img class="h-full w-full object-contain" src="./assets/19/assets/images/avatar-jacob-thompson.webp" alt="" />
+            </div>
+            <div>
+              <p class="leading-5 text-gray-500">
+                <a href="#" class="mr-1 font-extrabold text-gray-600 transition hover:text-blue">Jacob Thompson</a>
+                has joined your group
+                <a href="#" class="ml-1 font-extrabold text-blue">Chess Club</a><span
+                  class="unread ml-2 inline-block h-2 w-2 rounded-full bg-red"></span>
+              </p>
+              <span class="text-gray-400">1 day ago</span>
+            </div>
+          </div>
+
+          <div class="flex gap-3 rounded-md p-4">
+            <div class="h-10 w-10 flex-shrink-0">
+              <img class="h-full w-full object-contain" src="./assets/19/assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+            </div>
+            <div>
+              <p class="leading-5 text-gray-500">
+                <a href="#" class="mr-1 font-extrabold text-gray-600 transition hover:text-blue">Rizky Hasanuddin</a>
+                sent you a private message
+              </p>
+              <span class="mb-3 inline-block text-gray-400">5 days ago</span>
+              <p class="cursor-pointer rounded-md border p-4 text-gray-500 transition hover:bg-gray-200">
+                Hello, thanks for setting up the Chess Club. I've been a
+                member for a few weeks now and I'm already having lots of fun
+                and improving my game.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex justify-between gap-3 rounded-md p-4">
+            <div class="flex gap-3">
+              <div class="h-10 w-10 flex-shrink-0">
+                <img class="h-full w-full object-contain" src="./assets/19/assets/images/avatar-kimberly-smith.webp" alt="" />
+              </div>
+              <div>
+                <p class="leading-5 text-gray-500">
+                  <a href="#" class="mr-1 font-extrabold text-gray-600 transition hover:text-blue">Kimberly Smith</a>
+                  commented on your picture
+                </p>
+                <span class="text-gray-400">1 week ago</span>
+              </div>
+            </div>
+            <div class="h-10 w-10 flex-shrink-0">
+              <img
+                class="h-full w-full cursor-pointer rounded-md object-contain transition hover:ring-2 hover:ring-gray-200"
+                src="./assets/19/assets/images/image-chess.webp" alt="" />
+            </div>
+          </div>
+
+          <div class="flex gap-3 rounded-md p-4">
+            <div class="h-10 w-10 flex-shrink-0">
+              <img class="h-full w-full object-contain" src="./assets/19/assets/images/avatar-nathan-peterson.webp" alt="" />
+            </div>
+            <div>
+              <p class="leading-5 text-gray-500">
+                <a href="#" class="mr-1 font-extrabold text-gray-600 transition hover:text-blue">Nathan Peterson</a>
+                reacted to your recent post
+                <a href="#" class="ml-1 font-extrabold transition hover:text-blue">5 end-game strategies to increase
+                  your win rate</a>
+              </p>
+              <span class="text-gray-400">2 weeks ago</span>
+            </div>
+          </div>
+
+          <div class="flex gap-3 rounded-md p-4">
+            <div class="h-10 w-10 flex-shrink-0">
+              <img class="h-full w-full object-contain" src="./assets/19/assets/images/avatar-anna-kim.webp" alt="" />
+            </div>
+            <div>
+              <p class="leading-5 text-gray-500">
+                <a href="#" class="mr-1 font-extrabold text-gray-600 transition hover:text-blue">Anna Kim</a>
+                left the group
+                <a href="#" class="ml-1 font-extrabold text-blue">Chess Club</a>
+              </p>
+              <span class="text-gray-400">2 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500">
+    <p>
+      Challenge by
+      <a class="font-extrabold text-blue" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>. Coded by
+      <a class="font-extrabold text-blue" href="https://github.com/siyosu">SIYOSU</a>.
+    </p>
+  </footer>
+  <script>
+    const notificationCount = document.querySelector("#notification_count");
+    const readAllBtn = document.querySelector("#read_all");
+    const unreadNotification = document.querySelectorAll(".unread");
+
+    readAllBtn.addEventListener("click", () => {
+      notificationCount.textContent = 0;
+      unreadNotification.forEach((el) => {
+        el.remove();
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -25,6 +25,7 @@
 - [Testimonials grid section](./17.%20testimonials-grid-section-main/)
 - [Clipboard landing page](./18.%20clipboard-landing-page-master/)
 - [Notifications page](./19.%20notifications-page-main/)
+- [Tip calculator app](./20.%20Tip%20Calculator%20App/)
 
 Check out my Frontend Mentor page https://www.frontendmentor.io/profile/siyosu
 

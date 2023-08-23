@@ -21,7 +21,7 @@
                 </div>
             </div>
             <button @click.prevent="resetData"
-                class="rounded-lg bg-cyan-400 p-[10px] text-xl font-black uppercase text-cyan-600 transition duration-200 hover:bg-cyan-200 active:scale-95">
+                class="rounded-lg bg-cyan-400 p-[10px] text-xl font-black uppercase text-cyan-600 transition duration-200 hover:bg-cyan-200 active:scale-95 disabled:bg-cyan-400/30 disabled:cursor-not-allowed disabled:active:scale-100" :disabled="data.totalPerPerson > 0 ? false : true">
                 Reset
             </button>
         </div>

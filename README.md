@@ -17,6 +17,7 @@
 - [Single price grid component](./12.%20single-price-grid-component-master/)
 - [Article preview component](./13.%20article-preview-component-master/)
 - [FAQ accordion card](./15.%20faq-accordion-card-main/)
+- [Ping single column coming soon page](./21.%20ping-coming-soon-page-master/)
 
 ### Junior challenge
 - [Newsletter sign-up form with success message](./9.%20newsletter-sign-up-with-success-message-main/)

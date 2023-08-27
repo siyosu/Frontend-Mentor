@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "watch": "npx tailwindcss -i ./src/input.css -o ./src/style.css --watch"
+    "watch": "npx tailwindcss -i ./src/input.css -o ./src/style.css --watch",
+    "minify": "npx tailwindcss -o ./src/style.css --minify"
   },
   "devDependencies": {
     "prettier-plugin-tailwindcss": "^0.5.3",
